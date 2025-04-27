@@ -1,0 +1,11 @@
+local GROUP_ID = 1234567 -- ใส่ Group ID ที่ต้องการตรงนี้
+
+if game.CreatorType == Enum.CreatorType.Group then
+    if game.CreatorId == GROUP_ID then
+        print("✅ เกมนี้เป็นของกลุ่มที่ถูกต้อง")
+    else
+        print("❌ เกมนี้ไม่ใช่ของกลุ่มที่ต้องการ!")
+    end
+else
+    print("❌ เกมนี้สร้างโดย User ไม่ใช่กลุ่ม")
+end
